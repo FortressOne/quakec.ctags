@@ -1,0 +1,4 @@
+--langdef=quakec
+--langmap=quakec:.qc
+--regex-quakec=/^[ \t]*(void|float|vector|string|entity)[ \t]*\([^(]*\)[ \t]*([a-zA-Z0-9_]+)[ \t]*\=/\2/f,functions/
+--regex-quakec=/^[ \t]*\.?(float|vector|string|entity)[ \t]+([^();= ]+)[ \t]*(=.*)?;/\2/v,variable definitions/
